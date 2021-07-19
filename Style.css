@@ -163,7 +163,7 @@ body {
     text-decoration: underline;
 }
 
-img{
+.img-background img{
     width:300px;
     height: 320px;
     margin: 13px 25px;
@@ -207,7 +207,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     
 }
 
@@ -383,9 +383,97 @@ text{
 }
 
 .project{
-    height: 100vh;
-    background-color: beige;
+    height: 170vh;
+    background-color: rgb(182, 179, 179);
     text-align: center;
-    padding-top: 10vh;
-    
+    padding-top: 10vh;   
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 5px;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.card-container{
+    width:250px;
+    height:375px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    margin: 30px;
+    overflow: hidden;
+}
+
+.card-header{
+    width:250px;
+    height:200px;
+    overflow: hidden;
+}
+
+.card-header img{
+    width: 250px;
+    height:200px;
+}
+.card-body{
+    display: flex; 
+    flex-direction: column;
+    height:140px;
+    align-items: left;  
+}
+
+.card-body h4{
+    margin:10px
+}
+
+.card-body p{
+    font-size: 12px;
+    line-height: 20px;
+    margin:10px;
+    text-align: center;
+}
+
+.card-body ul .tag{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.tag-red{
+    background-color: tomato;
+    color: black;
+}
+
+.tag-blue{
+    background-color: rgb(0, 60, 255);
+    color: #ffffff;
+}
+
+.tag-yellow{
+    background-color: rgb(255, 251, 0);
+    color: black;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+   align-items: flex-end;
+}
+.user li{
+    list-style: none;
+}
+.user li a{
+    text-decoration: none;
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 10px;
 }
