@@ -6,6 +6,10 @@ let slideCount = 0;
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 
+const button = document.querySelector('.button');
+
+
+
 next.addEventListener("click",function(){
 
     if(slideCount === totalSlides-1)
@@ -38,6 +42,7 @@ for(let slide of slides)
     slide.classList.add('carousel_item_hidden');
     slide.classList.remove('carousel_item_visible');
 }
+console.log(slides);
   slides[slideCount].classList.add('carousel_item_visible');
 };
 
@@ -58,37 +63,56 @@ skill.innerHTML= skill.getAttribute('data-cover') +'%';
 ,900);
 };
 
-/* Circular Progress bar for skill section*/
 
-let progressCircles = document.querySelectorAll('.progress');
+/* Project slides*/
 
-const centreData = document.querySelectorAll('.data');
+const pro_slide = document.getElementsByClassName('card');
+const total_pro = pro_slide.length;
+let ProCount = 0;
+console.log(pro_slide);
+console.log(total_pro);
 
-progressCircles.forEach(progress);
+const next_btn = document.querySelector('#next');
+const prev_btn= document.querySelector('#prev');
 
-centreData.forEach(progressData);
+next_btn.addEventListener("click",function(){
 
- function progressData(a)
+     if(ProCount === total_pro-1)
+     {
+          ProCount=0;  
+          console.log(ProCount);
+     }
+     else
+     {
+          ProCount++;
+          console.log(ProCount);
+     }
+     ProjectSlide();
+ });
+ 
+ prev_btn.addEventListener('click',function(){
+ 
+     if(ProCount === 0)
+     {
+          ProCount=total_pro-1;      
+     }
+     else
+     {
+          ProCount--;
+     }
+     ProjectSlide();
+ });
+ 
+ function ProjectSlide(){
+ for(let pro of pro_slide)
  {
-    let p=a.previousElementSibling.getAttribute('data');
-    a.innerHTML=p+"%";
+     pro.classList.add('hidden');
+     pro.classList.remove('visible');
  }
-
-function progress(progressCircle)
-{
-let radius = progressCircle.r.baseVal.value;
-let circumference = radius*2* Math.PI;
-
-progressCircle.style.strokeDasharray = circumference;
-
-setProgress(progressCircle.getAttribute('data'));
-
-function setProgress(percent)
-{
-     progressCircle.style.strokeDashoffset = circumference - (percent/100)*circumference;
-};
-
-};
+ console.log(pro_slide);
+ pro_slide[ProCount].classList.add('visible');
+ };
+ 
 
 
  
