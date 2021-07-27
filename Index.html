@@ -26,18 +26,21 @@
         <div >
             <span class="Brand-name">VINEETH</span> 
         </div>
+        <div class="background-menu"></div>
             <!-- Menus -->
         <div class="menu-div">
             <ul class="menu">
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#about"class="link">About</a></li>
-                <li><a href="#skill"class="link">Skills</a></li>
-                <li><a href="#project"class="link">Projects</a></li>
-                <li><a href="#contactMe"class="link">Contacts</a></li>
+                <li><a href="#" class="link active"onclick="handleMenu()">Home</a></li>
+                <li><a href="#about"class="link"onclick="handleMenu()">About</a></li>
+                <li><a href="#skill"class="link"onclick="handleMenu()">Skills</a></li>
+                <li><a href="#project"class="link"onclick="handleMenu()">Projects</a></li>
+                <li><a href="#contactMe"class="link"onclick="handleMenu()">Contacts</a></li>
                 <button class="orange-button"><a href="https://github.com/vineethpejathaya/Portfolio-01" target="_blank">Source Code</a></button>
             </ul>
         </div>
-        <div class="hamburger">
+        
+        <div class="hamburger" onclick="handleMenu()">
+            
             <a><i class="fas fa-bars"></i></a>
         </div>
     </nav>

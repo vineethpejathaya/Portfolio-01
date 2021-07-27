@@ -1,3 +1,61 @@
+const hamburger = document.querySelector('.hamburger');
+
+const background = document.querySelector('.background-menu');
+
+const menuDiv = document.querySelector('.menu-div');
+ const BrandName = document.querySelector('.Brand-name');
+
+let nav = true;
+
+
+const handleMenu = () =>{
+     if(nav)
+     {
+          menuDiv.style.cssText ='right:0%; transition: all 0.3s ease-out;color:black;';
+          nav=!nav;
+          BrandName.style.cssText='color:black;';
+          hamburger.style.cssText='color:black;';
+          background.style.cssText ='right:0px; top:0px;transform: scale(30);';
+     }
+     else
+     {
+          menuDiv.style.cssText ='right:100%;transition: all 0.3s ease-out; ';
+          BrandName.style.cssText='color:white;';
+          hamburger.style.cssText='color:white;';
+          background.style.cssText ='right:220px; top:-100px;z-index:-100;transform: scale(1);'
+          nav=!nav;
+
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Slide show for skills section*/
 const slides = document.getElementsByClassName('carousel_item');
 const totalSlides = slides.length;
@@ -64,55 +122,7 @@ skill.innerHTML= skill.getAttribute('data-cover') +'%';
 };
 
 
-/* Project slides*/
 
-const pro_slide = document.getElementsByClassName('card');
-const total_pro = pro_slide.length;
-let ProCount = 0;
-console.log(pro_slide);
-console.log(total_pro);
-
-const next_btn = document.querySelector('#next');
-const prev_btn= document.querySelector('#prev');
-
-next_btn.addEventListener("click",function(){
-
-     if(ProCount === total_pro-1)
-     {
-          ProCount=0;  
-          console.log(ProCount);
-     }
-     else
-     {
-          ProCount++;
-          console.log(ProCount);
-     }
-     ProjectSlide();
- });
- 
- prev_btn.addEventListener('click',function(){
- 
-     if(ProCount === 0)
-     {
-          ProCount=total_pro-1;      
-     }
-     else
-     {
-          ProCount--;
-     }
-     ProjectSlide();
- });
- 
- function ProjectSlide(){
- for(let pro of pro_slide)
- {
-     pro.classList.add('hidden');
-     pro.classList.remove('visible');
- }
- console.log(pro_slide);
- pro_slide[ProCount].classList.add('visible');
- };
- 
 
 
  

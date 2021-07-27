@@ -26,6 +26,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     text-shadow: 4px 4px 10px black;
+    z-index:10;
 }
 
 .Brand-name{
@@ -68,12 +69,22 @@ body {
     font-size: 15px;
 }
 
-
+.background-menu{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    top:-60px;
+    z-index: -100;
+}
 .hamburger{
     font-size: 25px;
     font-weight: 700;
     cursor: pointer;
     display:none;
+    position: relative;
+    z-index:-50;
 }
 .Overview{ 
     height: 100vh;
@@ -948,7 +959,27 @@ body {
 }
 
 @media (max-width: 750px){
+     
 
+    .menu-div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top:40px;
+        right: 100%;
+        width:100vw;
+        height: 80vh;
+    }
+    .menu{
+        display:flex;
+        flex-direction: column;
+    }
+    .menu li a{
+        color: black;  
+    }
     .Overview{  
         flex-direction: column-reverse; 
     }
@@ -976,7 +1007,7 @@ body {
     }
 
     .greet{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .name{
@@ -986,6 +1017,11 @@ body {
     .Roles{
         font-size: 18px;
     } 
+
+    .image-intro{
+        width: 40%;
+        height: 60%;
+    }
 
     .main{
         flex-direction: column;
@@ -1136,7 +1172,7 @@ body {
     }
 
     .greet{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .name{
@@ -1146,6 +1182,12 @@ body {
     .Roles{
         font-size: 18px;
     } 
+     
+    .image-intro{
+        width: 60%;
+        height: 60%;
+    }
+    
 
     .main{
         flex-direction: column;
