@@ -549,6 +549,7 @@ body {
     font-size: 16px;
     text-align: center;
     text-decoration: underline  red;
+    margin:20px;
     
 }
 
@@ -556,10 +557,10 @@ body {
     width: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     font-size: 15px;
-    height: 30%;
+    height: 100%;
    
 }
 .contactMe .address{
@@ -581,6 +582,15 @@ body {
     font-size: 14px;
     margin: 20px;
     text-align: justify;
+}
+
+.address ul {
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 
 .contacts ul li {  
