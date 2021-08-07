@@ -138,7 +138,7 @@ body {
     color: greenyellow;
     height: 50px;
     overflow: hidden;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .Roles h3{
@@ -182,15 +182,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width:100vw;.img-background img{
-        width:90%;
-        height: 90%;
-    }.img-background img{
-        width:90%;
-        height: 90%;
+    justify-content: space-evenly;
+    width:100vw;
     }
-}
+
+    
+
 
 .main{
     display: flex;
@@ -706,7 +703,7 @@ body {
         font-size: 14px;
     }
     
-}
+}around
 
 
 
@@ -1039,9 +1036,13 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .img-background{
+        width:60%;
+        height: 80%;
+    }
     .img-background img{
-        width:90%;
-        height: 90%;
+        width:60%;
+        height: 75%;
     }
 
     .pro-container h1, .back h1, .project h1{
@@ -1057,8 +1058,8 @@ body {
     
     .download{
         padding: 6px;
-        font-size: 9px;
-        margin-top: 17px;
+        font-size: 11px;
+        margin-top: 8px;
     }
     
     .carousel_item h2{
@@ -1211,9 +1212,13 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .img-background{
+        width:60%;
+        height: 80%;
+    }
     .img-background img{
-        width:90%;
-        height: 90%;
+        width:70%;
+        height: 80%;
     }
 
     .pro-container h1, .back h1, .project h1{
@@ -1223,13 +1228,13 @@ body {
     .details{
         font-size: 12px; 
         justify-content: center;
-        width: 80%;
+        
     }
     
     .download{
         padding: 8px;
         font-size: 11px;
-        margin-top: 21px;
+        margin-top: 15px;
     }
 
     .carousel_item h2{
