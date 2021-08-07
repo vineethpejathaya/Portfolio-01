@@ -13,14 +13,14 @@ const handleMenu = () =>{
      {
           menuDiv.style.cssText ='right:0%; transition: all 0.3s ease-out;color:black;';
           nav=!nav;
-          BrandName.style.cssText='color:black;';
+          
           hamburger.style.cssText='color:black;';
-          background.style.cssText ='right:0px; top:0px;transform: scale(30);';
+          background.style.cssText ='right:0px; top:0px;transform: scale(40);';
      }
      else
      {
           menuDiv.style.cssText ='right:100%;transition: all 0.3s ease-out; ';
-          BrandName.style.cssText='color:white;';
+    
           hamburger.style.cssText='color:white;';
           background.style.cssText ='right:220px; top:-100px;z-index:-100;transform: scale(1);'
           nav=!nav;
