@@ -1297,7 +1297,7 @@ body {
         justify-content: center;
         align-items: center;
         width:95%;
-        height: 80%;
+        height: 100%;
     }
     
     .card-header{
@@ -1312,7 +1312,7 @@ body {
     .card-body{
         display: flex; 
         flex-direction: column;
-        height:50%;
+        height:40%;
         align-items: center;  
     }
     
@@ -1334,7 +1334,7 @@ body {
         padding: 4px 5px;    
         font-size: 6px;
         margin:0 10px;
-        margin-top:5px;
+        margin-bottom:5px;
     }
       
     .contactMe h2{
