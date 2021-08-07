@@ -792,26 +792,7 @@ body {
         font-size: 18px;
     }
 
-    .card-body h4{
-        margin:8px
-    }
     
-    .card-body p{
-        font-size: 10px;
-        margin:7px;
-    }
-    
-    .card-body ul .tag{
-        font-size: 9px;
-        padding: 2px 7px;
-    }
-
-    .user li a{
-        padding: 4px 8px;    
-        font-size: 10px;
-        margin:0 16px;
-        margin-top:8px;
-    }
     
     .contactMe h2{
         font-size: 13px;  
