@@ -553,21 +553,22 @@ body {
     
 }
 
-.contactMe .aboutUs, .contactMe .address, .contactMe .contacts {
-    width: 33%;
+.contactMe .address, .contactMe .contacts {
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 15px;
     height: 100%;
    
 }
 .contactMe .address{
-    width: 40%;
+    width:60%;
 }
+
 .contactMe .contacts{
-    width: 27%;
+    width: 30%;
 }
 .contacts li a{
     font-size: 20px;
@@ -578,11 +579,7 @@ body {
     list-style: none;
 }
 
-.aboutUs p{
-    font-size: 14px;
-    margin: 20px;
-    text-align: justify;
-}
+
 
 .address ul {
     height:50%;
@@ -696,7 +693,7 @@ body {
         font-size: 15px;  
     }
     
-    .contactMe .aboutUs, .contactMe .address, .contactMe .contacts {
+    .contactMe .address, .contactMe .contacts {
         font-size: 14px;
     }
     
@@ -705,9 +702,7 @@ body {
     }
     
     
-    .aboutUs p{
-        font-size: 13px;
-    }
+    
     
     .contacts ul li {  
         font-size: 14px;
@@ -829,7 +824,7 @@ body {
         font-size: 13px;  
     }
     
-    .contactMe .aboutUs, .contactMe .address, .contactMe .contacts {
+    .contactMe .address, .contactMe .contacts {
         font-size: 13px;
     }
     
@@ -838,9 +833,7 @@ body {
     }
     
     
-    .aboutUs p{
-        font-size: 12px;
-    }
+    
     
     .contacts ul li {  
         font-size: 13px;
@@ -965,7 +958,7 @@ body {
         font-size: 11px;  
     }
     
-    .contactMe .aboutUs, .contactMe .address, .contactMe .contacts {
+    .contactMe .address, .contactMe .contacts {
         font-size: 12px;
     }
     
@@ -974,9 +967,7 @@ body {
     }
     
     
-    .aboutUs p{
-        font-size: 10px;
-    }
+   
     
     .contacts ul li {  
         font-size: 12px;
@@ -1168,22 +1159,22 @@ body {
         font-size: 11px;  
     }
     
-    .contactMe .aboutUs, .contactMe .address, .contactMe .contacts {
+     .contactMe .address, .contactMe .contacts {
         font-size: 9px;
-         width: 30%;
+         width: 40%;
     }
 
     .contactMe .address{
-        font-size: 8px;
+        font-size: 10px;
+        width:60%;
+    }
+    
+    .contactMe .contacts{
+        width: 30%;
     }
     
     .contacts li a{
         font-size: 10px;
-    }
-    
-    
-    .aboutUs p{
-        font-size: 9px;
     }
     
     .contacts ul li {  
@@ -1307,18 +1298,22 @@ body {
         font-size: 8px;  
     }
     
-    .contactMe .aboutUs, .contactMe .address, .contactMe .contacts {
+    .contactMe .address, .contactMe .contacts {
         font-size: 9px;
     }
+    .contactMe .address{
+        width:60%;
+    }
     
+    .contactMe .contacts{
+        width: 30%;
+    }
     .contacts li a{
         font-size: 12px;
     }
     
     
-    .aboutUs p{
-        font-size: 5px;
-    }
+   
     
     .contacts ul li {  
         font-size: 8px;
