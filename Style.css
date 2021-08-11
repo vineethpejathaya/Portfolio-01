@@ -1156,16 +1156,15 @@ body {
     }
     
     .contactMe h2{
-        font-size: 11px;  
+        font-size: 16px;  
     }
     
      .contactMe .address, .contactMe .contacts {
-        font-size: 9px;
-         width: 40%;
+        font-size: 14px;
     }
 
     .contactMe .address{
-        font-size: 10px;
+       
         width:60%;
     }
     
@@ -1174,12 +1173,10 @@ body {
     }
     
     .contacts li a{
-        font-size: 10px;
+        font-size: 14px;
     }
     
-    .contacts ul li {  
-        font-size: 10px;
-    }
+    
 
 }
 
@@ -1295,11 +1292,11 @@ body {
     
     
     .contactMe h2{
-        font-size: 8px;  
+        font-size: 14px;  
     }
     
     .contactMe .address, .contactMe .contacts {
-        font-size: 9px;
+        font-size: 12px;
     }
     .contactMe .address{
         width:60%;
@@ -1311,11 +1308,5 @@ body {
     .contacts li a{
         font-size: 12px;
     }
-    
-    
-   
-    
-    .contacts ul li {  
-        font-size: 8px;
-    }
+
 }
