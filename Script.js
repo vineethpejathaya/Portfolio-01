@@ -30,32 +30,6 @@ const handleMenu = () =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Slide show for skills section*/
 const slides = document.getElementsByClassName('carousel_item');
 const totalSlides = slides.length;
@@ -112,13 +86,9 @@ skills.forEach(addProgress)
 
 function addProgress(skill)
 {
-setTimeout(()=>
-{
+
 skill.style.width = skill.getAttribute('data-cover') +'%';
-skill.style.opacity = '1';
-skill.innerHTML= skill.getAttribute('data-cover') +'%';
-}
-,900);
+
 };
 
 

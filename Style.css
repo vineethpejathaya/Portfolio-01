@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
@@ -199,7 +198,6 @@ body {
 
 .pro-container h1, .back h1, .project h1{
     font-size: 35px;
-    font-family: 'Lobster', cursive;
     margin-top:10vh;
     text-decoration: underline;
 }
@@ -363,7 +361,7 @@ body {
     border-radius: 5px;
     height: 16px;
     color: black;
-    opacity:0;
+   
     transition: 1s ease;  
 }
 
@@ -478,6 +476,7 @@ body {
     font-size: 12px;
     margin:8px;
     text-align: center;
+    max-width:80%;
 }
 
 .card-body ul .tag{
